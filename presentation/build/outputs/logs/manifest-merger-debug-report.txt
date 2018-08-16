@@ -167,6 +167,10 @@ activity#alex.mrrok.presentation.screens.user.list.datachangepage.DataChangeActi
 ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:44:9-112
 	android:name
 		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:44:19-109
+activity#alex.mrrok.presentation.screens.user.list.addnews.AddNewsActivity
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:46:9-101
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:46:19-99
 meta-data#com.google.android.geo.API_KEY
 ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:47:9-49:55
 	android:value

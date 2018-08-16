@@ -5,31 +5,32 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.3"
-    timestamp="1534348481378"
+    timestamp="1534439640249"
     token="-692824700952929926"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="11780" />
+        duration="11455" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="194" />
     <task
         name="verifier"
-        duration="0" />
+        duration="131" />
 
     <artifact
-        location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1534347621286"
+        timestamp="1534438793352"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -56,10 +57,10 @@
             location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -74,30 +75,10 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1534347998503"
+        timestamp="1534439640249"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="METHOD_DELETED"
-        timestamp="1534348353217"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1534348481378"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
     </build>
 

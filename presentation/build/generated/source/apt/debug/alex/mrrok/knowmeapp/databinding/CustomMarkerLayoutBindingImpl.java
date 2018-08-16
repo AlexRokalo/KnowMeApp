@@ -13,8 +13,7 @@ public class CustomMarkerLayoutBindingImpl extends CustomMarkerLayoutBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.customIcon, 1);
+        sViewsWithIds = null;
     }
     // views
     @NonNull
@@ -28,9 +27,10 @@ public class CustomMarkerLayoutBindingImpl extends CustomMarkerLayoutBinding  {
         this(bindingComponent, root, mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds));
     }
     private CustomMarkerLayoutBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
-        super(bindingComponent, root, 0
+        super(bindingComponent, root, 1
             , (android.widget.ImageView) bindings[1]
             );
+        this.customIcon.setTag(null);
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
@@ -41,7 +41,7 @@ public class CustomMarkerLayoutBindingImpl extends CustomMarkerLayoutBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x2L;
+                mDirtyFlags = 0x4L;
         }
         requestRebind();
     }
@@ -70,11 +70,27 @@ public class CustomMarkerLayoutBindingImpl extends CustomMarkerLayoutBinding  {
 
     public void setViewModel(@Nullable alex.mrrok.presentation.screens.user.list.mainpage.fragmentmaps.MapsFragmentViewModel ViewModel) {
         this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x2L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
     }
 
     @Override
     protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
         switch (localFieldId) {
+            case 0 :
+                return onChangeViewModelPhoto((android.databinding.ObservableField<java.lang.String>) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeViewModelPhoto(android.databinding.ObservableField<java.lang.String> ViewModelPhoto, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
         }
         return false;
     }
@@ -86,15 +102,41 @@ public class CustomMarkerLayoutBindingImpl extends CustomMarkerLayoutBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
+        android.databinding.ObservableField<java.lang.String> viewModelPhoto = null;
+        java.lang.String viewModelPhotoGet = null;
+        alex.mrrok.presentation.screens.user.list.mainpage.fragmentmaps.MapsFragmentViewModel viewModel = mViewModel;
+
+        if ((dirtyFlags & 0x7L) != 0) {
+
+
+
+                if (viewModel != null) {
+                    // read viewModel.photo
+                    viewModelPhoto = viewModel.photo;
+                }
+                updateRegistration(0, viewModelPhoto);
+
+
+                if (viewModelPhoto != null) {
+                    // read viewModel.photo.get()
+                    viewModelPhotoGet = viewModelPhoto.get();
+                }
+        }
         // batch finished
+        if ((dirtyFlags & 0x7L) != 0) {
+            // api target 1
+
+            alex.mrrok.presentation.screens.user.view.PiccaloLoadImage.loadImage(this.customIcon, viewModelPhotoGet);
+        }
     }
     // Listener Stub Implementations
     // callback impls
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): viewModel
-        flag 1 (0x2L): null
+        flag 0 (0x1L): viewModel.photo
+        flag 1 (0x2L): viewModel
+        flag 2 (0x3L): null
     flag mapping end*/
     //end
 }

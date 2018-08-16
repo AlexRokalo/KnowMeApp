@@ -4,6 +4,10 @@
         "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_news.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\item_news.xml"
+    },
+    {
         "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_user.xml",
         "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\item_user.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_anothe_user.xml",
         "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_anothe_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_news.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_add_news.xml"
     },
     {
         "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user_account.xml",

@@ -50,6 +50,7 @@
         <activity android:name="alex.mrrok.presentation.screens.user.list.userpage.UserPageAcitvity" />
         <activity android:name="alex.mrrok.presentation.screens.user.list.settinguserpage.SettingUserActivity" />
         <activity android:name="alex.mrrok.presentation.screens.user.list.datachangepage.DataChangeActivity" />
+        <activity android:name="alex.mrrok.presentation.screens.user.list.addnews.AddNewsActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

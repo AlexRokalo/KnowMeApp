@@ -34,8 +34,8 @@ public class RestServiceUserNews implements RestUserNewsApi {
         this.restApi = new Retrofit.Builder()
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
-                .baseUrl("https://api.backendless.com/5B4247FF-EC12-2AE1-FF4D-959409B77A00/" +
-                        "BA4A29D5-DBC7-4F6A-FF7A-DFB1DBE86600/")
+                .baseUrl("https://api.backendless.com/5B4247FF-EC12-2AE1-FF4D-959409B77A00" +
+                        "/BA4A29D5-DBC7-4F6A-FF7A-DFB1DBE86600/")
                 .client(httpConection.getOkHttp())
                 .build()
                 .create(RestUserNewsApi.class);

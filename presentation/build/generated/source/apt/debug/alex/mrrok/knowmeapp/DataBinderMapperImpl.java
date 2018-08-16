@@ -1,6 +1,7 @@
 package alex.mrrok.knowmeapp;
 
 import alex.mrrok.knowmeapp.databinding.ActivityAccountSettingsBindingImpl;
+import alex.mrrok.knowmeapp.databinding.ActivityAddNewsBindingImpl;
 import alex.mrrok.knowmeapp.databinding.ActivityAnotheUserBindingImpl;
 import alex.mrrok.knowmeapp.databinding.ActivityFragmentmapBindingImpl;
 import alex.mrrok.knowmeapp.databinding.ActivityListuserfragmentBindingImpl;
@@ -12,6 +13,7 @@ import alex.mrrok.knowmeapp.databinding.ActivityUserAccountBindingImpl;
 import alex.mrrok.knowmeapp.databinding.ActivityUserAccountWithViewBindingImpl;
 import alex.mrrok.knowmeapp.databinding.ActivityVpuserBindingImpl;
 import alex.mrrok.knowmeapp.databinding.CustomMarkerLayoutBindingImpl;
+import alex.mrrok.knowmeapp.databinding.ItemNewsBindingImpl;
 import alex.mrrok.knowmeapp.databinding.ItemUserBindingImpl;
 import android.databinding.DataBinderMapper;
 import android.databinding.DataBindingComponent;
@@ -34,40 +36,46 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYLISTUSERFRAGMENT = 4;
 
-  private static final int LAYOUT_ACTIVITYUSERACCOUNT = 5;
+  private static final int LAYOUT_ACTIVITYSETTINGS = 5;
 
-  private static final int LAYOUT_ACTIVITYSETTINGS = 6;
+  private static final int LAYOUT_ACTIVITYMAP = 6;
 
-  private static final int LAYOUT_ACTIVITYMAP = 7;
+  private static final int LAYOUT_ACTIVITYLOGIN = 7;
 
-  private static final int LAYOUT_ACTIVITYLOGIN = 8;
+  private static final int LAYOUT_ACTIVITYACCOUNTSETTINGS = 8;
 
-  private static final int LAYOUT_ACTIVITYACCOUNTSETTINGS = 9;
+  private static final int LAYOUT_ITEMUSER = 9;
 
-  private static final int LAYOUT_ACTIVITYVPUSER = 10;
+  private static final int LAYOUT_CUSTOMMARKERLAYOUT = 10;
 
-  private static final int LAYOUT_ITEMUSER = 11;
+  private static final int LAYOUT_ACTIVITYADDNEWS = 11;
 
   private static final int LAYOUT_ACTIVITYANOTHEUSER = 12;
 
-  private static final int LAYOUT_CUSTOMMARKERLAYOUT = 13;
+  private static final int LAYOUT_ACTIVITYVPUSER = 13;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(13);
+  private static final int LAYOUT_ACTIVITYUSERACCOUNT = 14;
+
+  private static final int LAYOUT_ITEMNEWS = 15;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(15);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_fragmentmap, LAYOUT_ACTIVITYFRAGMENTMAP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_user_account_with_view, LAYOUT_ACTIVITYUSERACCOUNTWITHVIEW);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_signup, LAYOUT_ACTIVITYSIGNUP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_listuserfragment, LAYOUT_ACTIVITYLISTUSERFRAGMENT);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_user_account, LAYOUT_ACTIVITYUSERACCOUNT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_settings, LAYOUT_ACTIVITYSETTINGS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_map, LAYOUT_ACTIVITYMAP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_account_settings, LAYOUT_ACTIVITYACCOUNTSETTINGS);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_vpuser, LAYOUT_ACTIVITYVPUSER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.item_user, LAYOUT_ITEMUSER);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_anothe_user, LAYOUT_ACTIVITYANOTHEUSER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.custom_marker_layout, LAYOUT_CUSTOMMARKERLAYOUT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_add_news, LAYOUT_ACTIVITYADDNEWS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_anothe_user, LAYOUT_ACTIVITYANOTHEUSER);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_vpuser, LAYOUT_ACTIVITYVPUSER);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_user_account, LAYOUT_ACTIVITYUSERACCOUNT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.item_news, LAYOUT_ITEMNEWS);
   }
 
   @Override
@@ -103,12 +111,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_listuserfragment is invalid. Received: " + tag);
         }
-        case  LAYOUT_ACTIVITYUSERACCOUNT: {
-          if ("layout/activity_user_account_0".equals(tag)) {
-            return new ActivityUserAccountBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for activity_user_account is invalid. Received: " + tag);
-        }
         case  LAYOUT_ACTIVITYSETTINGS: {
           if ("layout/activity_settings_0".equals(tag)) {
             return new ActivitySettingsBindingImpl(component, view);
@@ -133,17 +135,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_account_settings is invalid. Received: " + tag);
         }
-        case  LAYOUT_ACTIVITYVPUSER: {
-          if ("layout/activity_vpuser_0".equals(tag)) {
-            return new ActivityVpuserBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for activity_vpuser is invalid. Received: " + tag);
-        }
         case  LAYOUT_ITEMUSER: {
           if ("layout/item_user_0".equals(tag)) {
             return new ItemUserBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for item_user is invalid. Received: " + tag);
+        }
+        case  LAYOUT_CUSTOMMARKERLAYOUT: {
+          if ("layout/custom_marker_layout_0".equals(tag)) {
+            return new CustomMarkerLayoutBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for custom_marker_layout is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYADDNEWS: {
+          if ("layout/activity_add_news_0".equals(tag)) {
+            return new ActivityAddNewsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_add_news is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYANOTHEUSER: {
           if ("layout/activity_anothe_user_0".equals(tag)) {
@@ -151,11 +159,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_anothe_user is invalid. Received: " + tag);
         }
-        case  LAYOUT_CUSTOMMARKERLAYOUT: {
-          if ("layout/custom_marker_layout_0".equals(tag)) {
-            return new CustomMarkerLayoutBindingImpl(component, view);
+        case  LAYOUT_ACTIVITYVPUSER: {
+          if ("layout/activity_vpuser_0".equals(tag)) {
+            return new ActivityVpuserBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for custom_marker_layout is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for activity_vpuser is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYUSERACCOUNT: {
+          if ("layout/activity_user_account_0".equals(tag)) {
+            return new ActivityUserAccountBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_user_account is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMNEWS: {
+          if ("layout/item_news_0".equals(tag)) {
+            return new ItemNewsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_news is invalid. Received: " + tag);
         }
       }
     }
@@ -210,12 +230,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         break;
       }
-      case 1492751989: {
-        if(tag.equals("layout/activity_user_account_0")) {
-          return R.layout.activity_user_account;
-        }
-        break;
-      }
       case -415786017: {
         if(tag.equals("layout/activity_settings_0")) {
           return R.layout.activity_settings;
@@ -240,15 +254,21 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         break;
       }
-      case -1513696383: {
-        if(tag.equals("layout/activity_vpuser_0")) {
-          return R.layout.activity_vpuser;
-        }
-        break;
-      }
       case -1243181053: {
         if(tag.equals("layout/item_user_0")) {
           return R.layout.item_user;
+        }
+        break;
+      }
+      case -1627407753: {
+        if(tag.equals("layout/custom_marker_layout_0")) {
+          return R.layout.custom_marker_layout;
+        }
+        break;
+      }
+      case 1491352557: {
+        if(tag.equals("layout/activity_add_news_0")) {
+          return R.layout.activity_add_news;
         }
         break;
       }
@@ -258,9 +278,21 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         break;
       }
-      case -1627407753: {
-        if(tag.equals("layout/custom_marker_layout_0")) {
-          return R.layout.custom_marker_layout;
+      case -1513696383: {
+        if(tag.equals("layout/activity_vpuser_0")) {
+          return R.layout.activity_vpuser;
+        }
+        break;
+      }
+      case 1492751989: {
+        if(tag.equals("layout/activity_user_account_0")) {
+          return R.layout.activity_user_account;
+        }
+        break;
+      }
+      case -1455977205: {
+        if(tag.equals("layout/item_news_0")) {
+          return R.layout.item_news;
         }
         break;
       }

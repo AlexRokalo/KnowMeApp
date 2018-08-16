@@ -52,6 +52,7 @@ import io.reactivex.CompletableObserver;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.subjects.PublishSubject;
 
 public class MapsFragmentViewModel extends BaseViewModel<MainPageRouter> {
 
@@ -64,8 +65,10 @@ public class MapsFragmentViewModel extends BaseViewModel<MainPageRouter> {
     @Inject
     public DataBaseInfoUserCase dataBaseInfoUserCase;
 
-
     private static final float DEFAULT_ZOOM = 15f;
+
+    public Observable timerecvest;
+    public PublishSubject<Long> time = PublishSubject.create();
 
     public GoogleMap mMap;
     public Boolean mLocationPermissionsGranted = false;
@@ -133,7 +136,7 @@ public class MapsFragmentViewModel extends BaseViewModel<MainPageRouter> {
 
     public void addMarkerToMap(Double la, Double lo) {
         Log.e("addMarkerToMap", Double.toString(la));
-        Log.e("photo", photo.get());
+//        Log.e("photo", photo.get());
 
       /*  View marker = ((LayoutInflater) router.getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE))
                 .inflate(R.layout.custom_marker_layout, null);*/
@@ -254,76 +257,77 @@ public class MapsFragmentViewModel extends BaseViewModel<MainPageRouter> {
     }
 
     public void getOnlineUser() {
-        Observable.interval(10, TimeUnit.SECONDS)
-                .subscribe(new Observer<Long>() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
-                        getCompositeDisposable().add(d);
-                    }
+        time.subscribe(new Observer<Long>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+                getCompositeDisposable().add(d);
+            }
 
-                    @Override
-                    public void onNext(Long aLong) {
-                        geoAllFiltreUseCase.getAll()
-                                .subscribe(new Observer<List<UserGeoPosition>>() {
-                                    @Override
-                                    public void onSubscribe(Disposable d) {
-                                        getCompositeDisposable().add(d);
-                                    }
+            @Override
+            public void onNext(Long aLong) {
+                Log.e("ПРИХОДИТ", Long.toString(aLong));
+                geoAllFiltreUseCase.getAll()
+                        .subscribe(new Observer<List<UserGeoPosition>>() {
+                            @Override
+                            public void onSubscribe(Disposable d) {
+                                getCompositeDisposable().add(d);
+                            }
 
-                                    @Override
-                                    public void onNext(List<UserGeoPosition> userGeoPositions) {
-                                        mMap.clear();
-                                        for (int i = 0; i < userGeoPositions.size(); i++) {
-                                            dataBaseInfoUserCase
-                                                    .load(userGeoPositions.get(i).getEmail())
-                                                    .subscribe(new Observer<UserInformation>() {
-                                                        @Override
-                                                        public void onSubscribe(Disposable d) {
+                            @Override
+                            public void onNext(List<UserGeoPosition> userGeoPositions) {
+                                mMap.clear();
+                                for (int i = 0; i < userGeoPositions.size(); i++) {
+                                    dataBaseInfoUserCase
+                                            .load(userGeoPositions.get(i).getEmail())
+                                            .subscribe(new Observer<UserInformation>() {
+                                                @Override
+                                                public void onSubscribe(Disposable d) {
 
-                                                        }
+                                                }
 
-                                                        @Override
-                                                        public void onNext(UserInformation userInformation) {
-                                                            Log.e("onError", userInformation.getPhoto());
-                                                            photo.set(userInformation.getPhoto());
+                                                @Override
+                                                public void onNext(UserInformation userInformation) {
+                                                    Log.e("onError", userInformation.getPhoto());
+                                                    photo.set(userInformation.getPhoto());
 
-                                                        }
+                                                }
 
-                                                        @Override
-                                                        public void onError(Throwable e) {
-                                                            Log.e("onError", e.toString());
-                                                        }
+                                                @Override
+                                                public void onError(Throwable e) {
+                                                    Log.e("onError", e.toString());
+                                                }
 
-                                                        @Override
-                                                        public void onComplete() {
-                                                            Log.e("onCompleteDataBase","work");
-                                                        }
-                                                    });
-                                            addMarkerToMap(Double.parseDouble(userGeoPositions.get(i).getLatitude())
-                                                    , Double.parseDouble(userGeoPositions.get(i).getLongitude()));
-                                        }
-                                    }
+                                                @Override
+                                                public void onComplete() {
+                                                    Log.e("onCompleteDataBase", "work");
+                                                }
+                                            });
+                                    addMarkerToMap(Double.parseDouble(userGeoPositions.get(i).getLatitude())
+                                            , Double.parseDouble(userGeoPositions.get(i).getLongitude()));
+                                }
+                            }
 
-                                    @Override
-                                    public void onError(Throwable e) {
-                                        Log.e("onErrorGeo", e.toString());
-                                    }
+                            @Override
+                            public void onError(Throwable e) {
+                                Log.e("onErrorGeo", e.toString());
+                            }
 
-                                    @Override
-                                    public void onComplete() {
-                                    }
-                                });
-                    }
+                            @Override
+                            public void onComplete() {
+                            }
+                        });
+            }
 
-                    @Override
-                    public void onError(Throwable e) {
-                    }
+            @Override
+            public void onError(Throwable e) {
 
-                    @Override
-                    public void onComplete() {
-                    }
-                });
+            }
 
+            @Override
+            public void onComplete() {
+
+            }
+        });
 
     }
 

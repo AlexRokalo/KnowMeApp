@@ -3,6 +3,7 @@ package alex.mrrok.injection;
 
 import javax.inject.Singleton;
 
+import alex.mrrok.presentation.screens.user.list.addnews.AddNewsViewModel;
 import alex.mrrok.presentation.screens.user.list.datachangepage.DataChangeViewModel;
 import alex.mrrok.presentation.screens.user.list.mainpage.fragmentmaps.MapsFragmentViewModel;
 import alex.mrrok.presentation.screens.user.list.userpage.UserPageViewModel;
@@ -31,4 +32,6 @@ public interface AppComponent {
     void inject(DataChangeViewModel dataChangeViewModel);
 
     void inject(MapsFragmentViewModel mapsFragmentViewModel);
+
+    void inject(AddNewsViewModel addNewsViewModel);
 }

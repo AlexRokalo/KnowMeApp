@@ -7,6 +7,7 @@ import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,9 @@ public abstract class ActivityVpuserBinding extends ViewDataBinding {
   public final FrameLayout frameLayout2;
 
   @NonNull
+  public final RecyclerView recyclerViewNews;
+
+  @NonNull
   public final TextView textView3;
 
   @NonNull
@@ -48,13 +52,15 @@ public abstract class ActivityVpuserBinding extends ViewDataBinding {
 
   protected ActivityVpuserBinding(DataBindingComponent _bindingComponent, View _root,
       int _localFieldCount, CircleImageView activityVpCircleImage, Button button3,
-      FrameLayout frameLayout, FrameLayout frameLayout2, TextView textView3, TextView textView4,
-      TextView textView5, TextView textView8, TextView textView9) {
+      FrameLayout frameLayout, FrameLayout frameLayout2, RecyclerView recyclerViewNews,
+      TextView textView3, TextView textView4, TextView textView5, TextView textView8,
+      TextView textView9) {
     super(_bindingComponent, _root, _localFieldCount);
     this.activityVpCircleImage = activityVpCircleImage;
     this.button3 = button3;
     this.frameLayout = frameLayout;
     this.frameLayout2 = frameLayout2;
+    this.recyclerViewNews = recyclerViewNews;
     this.textView3 = textView3;
     this.textView4 = textView4;
     this.textView5 = textView5;

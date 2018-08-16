@@ -33,6 +33,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
+import java.util.concurrent.TimeUnit;
+
 import alex.mrrok.knowmeapp.R;
 import alex.mrrok.knowmeapp.databinding.ActivityAccountSettingsBindingImpl;
 import alex.mrrok.knowmeapp.databinding.ActivityMapBinding;
@@ -40,6 +42,9 @@ import alex.mrrok.presentation.base.BaseMvvmActivity;
 import alex.mrrok.presentation.base.BaseMvvmFragment;
 import alex.mrrok.presentation.screens.user.list.mainpage.MainPageRouter;
 import alex.mrrok.presentation.screens.user.list.mainpage.fragmentuserpage.FragmentRouter;
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.subjects.PublishSubject;
 
 public class MapsFragment extends
@@ -71,8 +76,33 @@ public class MapsFragment extends
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            Log.e("if","work");
+            Observable.interval(10, TimeUnit.SECONDS)
+                    .subscribe(new Observer<Long>() {
+                        @Override
+                        public void onSubscribe(Disposable d) {
+                            getCompositeDisposable().add(d);
+                        }
 
+                        @Override
+                        public void onNext(Long aLong) {
+                            viewModel.time.onNext(aLong);
+                        }
+
+                        @Override
+                        public void onError(Throwable e) {
+
+                        }
+
+                        @Override
+                        public void onComplete() {
+
+                        }
+                    });
+        }
     }
+
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {

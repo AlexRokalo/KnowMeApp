@@ -1,4 +1,4 @@
-#Wed Aug 15 17:40:13 MSK 2018
+#Thu Aug 16 16:49:08 MSK 2018
 base.0=C\:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\transforms\\dexMerger\\debug\\5
 path.0=classes.dex
 renamed.0=classes.dex

@@ -6,14 +6,19 @@ import android.databinding.ObservableField;
 import android.util.Log;
 import android.view.View;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import alex.mrrok.app.App;
 import alex.mrrok.data.phonedata.SaveUserKey;
 import alex.mrrok.domain.entity.UserInformation;
+import alex.mrrok.domain.entity.UserNews;
 import alex.mrrok.domain.usecases.DataBaseInfoUserCase;
+import alex.mrrok.domain.usecases.GetUserNewsUseCase;
 import alex.mrrok.domain.usecases.UserPageUseCase;
 import alex.mrrok.presentation.base.BaseViewModel;
+import alex.mrrok.presentation.base.recycler.UserNewsAdapter;
 import alex.mrrok.presentation.screens.user.list.mainpage.MainPageRouter;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
@@ -25,6 +30,10 @@ public class UserPageFragmentViewModel extends BaseViewModel<MainPageRouter> {
     public UserPageUseCase userPageUseCase;
     @Inject
     public DataBaseInfoUserCase dataBaseInfoUserCase;
+    @Inject
+    public GetUserNewsUseCase userNewsUseCase;
+
+    public UserNewsAdapter adapter = new UserNewsAdapter();
 
     public ObservableField<String> name = new ObservableField<>("");
     public ObservableField<String> nickName = new ObservableField<>("");
@@ -37,12 +46,16 @@ public class UserPageFragmentViewModel extends BaseViewModel<MainPageRouter> {
         App.getAppComponent().inject(this);
     }
 
-    private String validateEmail(String email) {
-        email.replace("@", "%40");
-        String result = "email%3D'" + email + "'";
-        return result;
-    }
+    public View.OnClickListener addNews = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            router.startAddNewsActivity();
+        }
+    };
 
+    private String validateEmail(String email) {
+        return "email%3D'" + email.replace("@", "%40") + "'";
+    }
 
     public UserPageFragmentViewModel() {
         id.subscribe(new Observer<String>() {
@@ -56,7 +69,7 @@ public class UserPageFragmentViewModel extends BaseViewModel<MainPageRouter> {
                 dataBaseInfoUserCase.load(SaveUserKey.getEmail()).subscribe(new Observer<UserInformation>() {
                     @Override
                     public void onSubscribe(Disposable d) {
-
+                        getCompositeDisposable().add(d);
                     }
 
                     @Override
@@ -77,6 +90,31 @@ public class UserPageFragmentViewModel extends BaseViewModel<MainPageRouter> {
                     }
                 });
 
+                userNewsUseCase
+                        .getNews(validateEmail(SaveUserKey.getEmail()))
+                        .subscribe(new Observer<List<UserNews>>() {
+                            @Override
+                            public void onSubscribe(Disposable d) {
+
+                            }
+
+                            @Override
+                            public void onNext(List<UserNews> userNews) {
+                                Log.e("onNextNEWS","WORK");
+                                adapter.addItems(userNews);
+                            }
+
+                            @Override
+                            public void onError(Throwable e) {
+                                Log.e("onError",e.toString());
+                            }
+
+                            @Override
+                            public void onComplete() {
+
+                            }
+                        });
+
 
             }
 
@@ -90,6 +128,8 @@ public class UserPageFragmentViewModel extends BaseViewModel<MainPageRouter> {
 
             }
         });
+
+
 
     }
 

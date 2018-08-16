@@ -12,6 +12,7 @@ import alex.mrrok.data.entity.GeoPoint;
 import alex.mrrok.data.entity.UserInfo;
 import alex.mrrok.data.entity.UserRegistration;
 import alex.mrrok.data.entity.UsersNews;
+import alex.mrrok.data.net.usernewsapi.RestServiceUserNews;
 import alex.mrrok.data.net.usernewsapi.RestUserNewsApi;
 import alex.mrrok.data.net.userregistrationapi.RestServiceRegistration;
 import alex.mrrok.data.net.usetgeolocationapi.RestServiceGeolocation;
@@ -36,12 +37,12 @@ public class UserRepositoryImp implements UserRepository {
     private RestServiceRegistration restServiceRegistration;
     private RestServiceUserInfo restServiceUserInfo;
     private RestServiceGeolocation geolocation;
-    private RestUserNewsApi userNewsApi;
+    private RestServiceUserNews userNewsApi;
     private UserInfoDataBase dataBase;
 
     @Inject
     public UserRepositoryImp(RestServiceRegistration restServiceRegistration, RestServiceUserInfo restServiceUserInfo,
-                             RestServiceGeolocation geolocation, UserInfoDataBase dataBase, RestUserNewsApi userNewsApi) {
+                             RestServiceGeolocation geolocation, UserInfoDataBase dataBase, RestServiceUserNews userNewsApi) {
         this.restServiceUserInfo = restServiceUserInfo;
         this.restServiceRegistration = restServiceRegistration;
         this.geolocation = geolocation;

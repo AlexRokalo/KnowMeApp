@@ -20,6 +20,7 @@ public class ActivityAnotheUserBindingImpl extends ActivityAnotheUserBinding  {
         sViewsWithIds.put(R.id.textView8, 7);
         sViewsWithIds.put(R.id.frameLayout2, 8);
         sViewsWithIds.put(R.id.frameLayout, 9);
+        sViewsWithIds.put(R.id.recyclerViewUsersNews, 10);
     }
     // views
     @NonNull
@@ -30,7 +31,7 @@ public class ActivityAnotheUserBindingImpl extends ActivityAnotheUserBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityAnotheUserBindingImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
     }
     private ActivityAnotheUserBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 3
@@ -38,6 +39,7 @@ public class ActivityAnotheUserBindingImpl extends ActivityAnotheUserBinding  {
             , (android.widget.FrameLayout) bindings[9]
             , (android.widget.FrameLayout) bindings[8]
             , (de.hdodenhof.circleimageview.CircleImageView) bindings[1]
+            , (android.support.v7.widget.RecyclerView) bindings[10]
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[6]

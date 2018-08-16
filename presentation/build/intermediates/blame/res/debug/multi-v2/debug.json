@@ -1032,22 +1032,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\res\\merged\\debug\\values-v17_values-v17.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\03ff9cc33c2a374bc894fcffaca9d48d\\res\\values-v17\\values-v17.xml",
-                    "from": {
-                        "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,228,456,614,764,936,1164,1406,1577,1751,1920,2193,2393,2597",
-                        "endLines": "4,8,11,14,17,21,25,28,31,34,38,41,45,49",
-                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
-                        "endOffsets": "223,451,609,759,931,1159,1401,1572,1746,1915,2188,2388,2592,2921"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\res\\merged\\debug\\values-ru_values-ru.arsc.flat",
             "map": [
                 {
@@ -1116,6 +1100,22 @@
                         "startOffsets": "1892,2001,2199,2327,2439,2640,2771,2916,3265,3505,3614,3808,3936,4162,4350,4449,4539",
                         "endColumns": "108,197,127,111,200,130,144,132,239,108,193,127,225,187,98,89,114",
                         "endOffsets": "1996,2194,2322,2434,2635,2766,2911,3044,3500,3609,3803,3931,4157,4345,4444,4534,4649"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\res\\merged\\debug\\values-v17_values-v17.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\03ff9cc33c2a374bc894fcffaca9d48d\\res\\values-v17\\values-v17.xml",
+                    "from": {
+                        "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,228,456,614,764,936,1164,1406,1577,1751,1920,2193,2393,2597",
+                        "endLines": "4,8,11,14,17,21,25,28,31,34,38,41,45,49",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "223,451,609,759,931,1159,1401,1572,1746,1915,2188,2388,2592,2921"
                     }
                 }
             ]
@@ -2339,79 +2339,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\res\\merged\\debug\\values-ka_values-ka.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\fa36b9a821a2789c392cf1906c2085f4\\res\\values-ka\\values-ka.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4668",
-                        "endColumns": "100",
-                        "endOffsets": "4764"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\e2142c07ee52e657b53cf1d047045bf1\\res\\values-ka\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,348,529,655,763,976,1108,1256,1389,1621,1727,1913,2039,2259,2424,2516,2603",
-                        "endColumns": "102,180,125,107,212,131,147,132,231,105,185,125,219,164,91,86,100",
-                        "endOffsets": "347,528,654,762,975,1107,1255,1388,1620,1726,1912,2038,2258,2423,2515,2602,2703"
-                    },
-                    "to": {
-                        "startLines": "19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35,36",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1878,1985,2166,2296,2408,2621,2757,2909,3248,3480,3590,3776,3906,4126,4295,4391,4482",
-                        "endColumns": "106,180,129,111,212,135,151,136,231,109,185,129,219,168,95,90,104",
-                        "endOffsets": "1980,2161,2291,2403,2616,2752,2904,3041,3475,3585,3771,3901,4121,4290,4386,4477,4582"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\03ff9cc33c2a374bc894fcffaca9d48d\\res\\values-ka\\values-ka.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,318,429,517,622,735,819,901,984,1097,1204,1302,1415,1519,1623,1780,1878",
-                        "endColumns": "108,103,110,87,104,112,83,81,82,112,106,97,112,103,103,156,97,80",
-                        "endOffsets": "209,313,424,512,617,730,814,896,979,1092,1199,1297,1410,1514,1618,1775,1873,1954"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,318,429,517,622,735,819,901,984,1097,1204,1302,1415,1519,1623,1780,4587",
-                        "endColumns": "108,103,110,87,104,112,83,81,82,112,106,97,112,103,103,156,97,80",
-                        "endOffsets": "209,313,424,512,617,730,814,896,979,1092,1199,1297,1410,1514,1618,1775,1873,4663"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\1056c83438f9516e050d1f32efc18354\\res\\values-ka\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "201",
-                        "endOffsets": "448"
-                    },
-                    "to": {
-                        "startLines": "27",
-                        "startColumns": "4",
-                        "startOffsets": "3046",
-                        "endColumns": "201",
-                        "endOffsets": "3243"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\res\\merged\\debug\\values-sl_values-sl.arsc.flat",
             "map": [
                 {
@@ -2480,6 +2407,79 @@
                         "startOffsets": "3067",
                         "endColumns": "198",
                         "endOffsets": "3261"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\res\\merged\\debug\\values-ka_values-ka.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\fa36b9a821a2789c392cf1906c2085f4\\res\\values-ka\\values-ka.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4668",
+                        "endColumns": "100",
+                        "endOffsets": "4764"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\e2142c07ee52e657b53cf1d047045bf1\\res\\values-ka\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,348,529,655,763,976,1108,1256,1389,1621,1727,1913,2039,2259,2424,2516,2603",
+                        "endColumns": "102,180,125,107,212,131,147,132,231,105,185,125,219,164,91,86,100",
+                        "endOffsets": "347,528,654,762,975,1107,1255,1388,1620,1726,1912,2038,2258,2423,2515,2602,2703"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1878,1985,2166,2296,2408,2621,2757,2909,3248,3480,3590,3776,3906,4126,4295,4391,4482",
+                        "endColumns": "106,180,129,111,212,135,151,136,231,109,185,129,219,168,95,90,104",
+                        "endOffsets": "1980,2161,2291,2403,2616,2752,2904,3041,3475,3585,3771,3901,4121,4290,4386,4477,4582"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\03ff9cc33c2a374bc894fcffaca9d48d\\res\\values-ka\\values-ka.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,318,429,517,622,735,819,901,984,1097,1204,1302,1415,1519,1623,1780,1878",
+                        "endColumns": "108,103,110,87,104,112,83,81,82,112,106,97,112,103,103,156,97,80",
+                        "endOffsets": "209,313,424,512,617,730,814,896,979,1092,1199,1297,1410,1514,1618,1775,1873,1954"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,318,429,517,622,735,819,901,984,1097,1204,1302,1415,1519,1623,1780,4587",
+                        "endColumns": "108,103,110,87,104,112,83,81,82,112,106,97,112,103,103,156,97,80",
+                        "endOffsets": "209,313,424,512,617,730,814,896,979,1092,1199,1297,1410,1514,1618,1775,1873,4663"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\1056c83438f9516e050d1f32efc18354\\res\\values-ka\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "201",
+                        "endOffsets": "448"
+                    },
+                    "to": {
+                        "startLines": "27",
+                        "startColumns": "4",
+                        "startOffsets": "3046",
+                        "endColumns": "201",
+                        "endOffsets": "3243"
                     }
                 }
             ]
@@ -3132,79 +3132,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\res\\merged\\debug\\values-et_values-et.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\03ff9cc33c2a374bc894fcffaca9d48d\\res\\values-et\\values-et.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,222,329,440,526,628,745,825,903,986,1097,1202,1301,1411,1512,1615,1781,1883",
-                        "endColumns": "116,106,110,85,101,116,79,77,82,110,104,98,109,100,102,165,101,81",
-                        "endOffsets": "217,324,435,521,623,740,820,898,981,1092,1197,1296,1406,1507,1610,1776,1878,1960"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,222,329,440,526,628,745,825,903,986,1097,1202,1301,1411,1512,1615,1781,4590",
-                        "endColumns": "116,106,110,85,101,116,79,77,82,110,104,98,109,100,102,165,101,81",
-                        "endOffsets": "217,324,435,521,623,740,820,898,981,1092,1197,1296,1406,1507,1610,1776,1878,4667"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\e2142c07ee52e657b53cf1d047045bf1\\res\\values-et\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,346,540,665,771,980,1107,1249,1377,1596,1702,1897,2027,2241,2412,2501,2592",
-                        "endColumns": "100,193,124,105,208,126,141,127,218,105,194,129,213,170,88,90,112",
-                        "endOffsets": "345,539,664,770,979,1106,1248,1376,1595,1701,1896,2026,2240,2411,2500,2591,2704"
-                    },
-                    "to": {
-                        "startLines": "19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35,36",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1883,1988,2182,2311,2421,2630,2761,2907,3238,3457,3567,3762,3896,4110,4285,4378,4473",
-                        "endColumns": "104,193,128,109,208,130,145,131,218,109,194,133,213,174,92,94,116",
-                        "endOffsets": "1983,2177,2306,2416,2625,2756,2902,3034,3452,3562,3757,3891,4105,4280,4373,4468,4585"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\1056c83438f9516e050d1f32efc18354\\res\\values-et\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "198",
-                        "endOffsets": "445"
-                    },
-                    "to": {
-                        "startLines": "27",
-                        "startColumns": "4",
-                        "startOffsets": "3039",
-                        "endColumns": "198",
-                        "endOffsets": "3233"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\fa36b9a821a2789c392cf1906c2085f4\\res\\values-et\\values-et.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4672",
-                        "endColumns": "100",
-                        "endOffsets": "4768"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\res\\merged\\debug\\values-fr_values-fr.arsc.flat",
             "map": [
                 {
@@ -3273,6 +3200,79 @@
                         "startOffsets": "4894",
                         "endColumns": "100",
                         "endOffsets": "4990"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\res\\merged\\debug\\values-et_values-et.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\03ff9cc33c2a374bc894fcffaca9d48d\\res\\values-et\\values-et.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,222,329,440,526,628,745,825,903,986,1097,1202,1301,1411,1512,1615,1781,1883",
+                        "endColumns": "116,106,110,85,101,116,79,77,82,110,104,98,109,100,102,165,101,81",
+                        "endOffsets": "217,324,435,521,623,740,820,898,981,1092,1197,1296,1406,1507,1610,1776,1878,1960"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,222,329,440,526,628,745,825,903,986,1097,1202,1301,1411,1512,1615,1781,4590",
+                        "endColumns": "116,106,110,85,101,116,79,77,82,110,104,98,109,100,102,165,101,81",
+                        "endOffsets": "217,324,435,521,623,740,820,898,981,1092,1197,1296,1406,1507,1610,1776,1878,4667"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\e2142c07ee52e657b53cf1d047045bf1\\res\\values-et\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,346,540,665,771,980,1107,1249,1377,1596,1702,1897,2027,2241,2412,2501,2592",
+                        "endColumns": "100,193,124,105,208,126,141,127,218,105,194,129,213,170,88,90,112",
+                        "endOffsets": "345,539,664,770,979,1106,1248,1376,1595,1701,1896,2026,2240,2411,2500,2591,2704"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1883,1988,2182,2311,2421,2630,2761,2907,3238,3457,3567,3762,3896,4110,4285,4378,4473",
+                        "endColumns": "104,193,128,109,208,130,145,131,218,109,194,133,213,174,92,94,116",
+                        "endOffsets": "1983,2177,2306,2416,2625,2756,2902,3034,3452,3562,3757,3891,4105,4280,4373,4468,4585"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\1056c83438f9516e050d1f32efc18354\\res\\values-et\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "198",
+                        "endOffsets": "445"
+                    },
+                    "to": {
+                        "startLines": "27",
+                        "startColumns": "4",
+                        "startOffsets": "3039",
+                        "endColumns": "198",
+                        "endOffsets": "3233"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mrrok\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\fa36b9a821a2789c392cf1906c2085f4\\res\\values-et\\values-et.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4672",
+                        "endColumns": "100",
+                        "endOffsets": "4768"
                     }
                 }
             ]

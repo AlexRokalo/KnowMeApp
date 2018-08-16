@@ -3,6 +3,7 @@ package alex.mrrok.data.repository;
 
 import alex.mrrok.data.database.UserInfoDataBase;
 import alex.mrrok.data.net.userinfoapi.RestServiceUserInfo;
+import alex.mrrok.data.net.usernewsapi.RestServiceUserNews;
 import alex.mrrok.data.net.userregistrationapi.RestServiceRegistration;
 import alex.mrrok.data.net.usetgeolocationapi.RestServiceGeolocation;
 import dagger.internal.Factory;
@@ -17,15 +18,19 @@ public final class UserRepositoryImp_Factory implements Factory<UserRepositoryIm
 
   private final Provider<UserInfoDataBase> dataBaseProvider;
 
+  private final Provider<RestServiceUserNews> userNewsApiProvider;
+
   public UserRepositoryImp_Factory(
       Provider<RestServiceRegistration> restServiceRegistrationProvider,
       Provider<RestServiceUserInfo> restServiceUserInfoProvider,
       Provider<RestServiceGeolocation> geolocationProvider,
-      Provider<UserInfoDataBase> dataBaseProvider) {
+      Provider<UserInfoDataBase> dataBaseProvider,
+      Provider<RestServiceUserNews> userNewsApiProvider) {
     this.restServiceRegistrationProvider = restServiceRegistrationProvider;
     this.restServiceUserInfoProvider = restServiceUserInfoProvider;
     this.geolocationProvider = geolocationProvider;
     this.dataBaseProvider = dataBaseProvider;
+    this.userNewsApiProvider = userNewsApiProvider;
   }
 
   @Override
@@ -34,39 +39,45 @@ public final class UserRepositoryImp_Factory implements Factory<UserRepositoryIm
         restServiceRegistrationProvider,
         restServiceUserInfoProvider,
         geolocationProvider,
-        dataBaseProvider);
+        dataBaseProvider,
+        userNewsApiProvider);
   }
 
   public static UserRepositoryImp provideInstance(
       Provider<RestServiceRegistration> restServiceRegistrationProvider,
       Provider<RestServiceUserInfo> restServiceUserInfoProvider,
       Provider<RestServiceGeolocation> geolocationProvider,
-      Provider<UserInfoDataBase> dataBaseProvider) {
+      Provider<UserInfoDataBase> dataBaseProvider,
+      Provider<RestServiceUserNews> userNewsApiProvider) {
     return new UserRepositoryImp(
         restServiceRegistrationProvider.get(),
         restServiceUserInfoProvider.get(),
         geolocationProvider.get(),
-        dataBaseProvider.get());
+        dataBaseProvider.get(),
+        userNewsApiProvider.get());
   }
 
   public static UserRepositoryImp_Factory create(
       Provider<RestServiceRegistration> restServiceRegistrationProvider,
       Provider<RestServiceUserInfo> restServiceUserInfoProvider,
       Provider<RestServiceGeolocation> geolocationProvider,
-      Provider<UserInfoDataBase> dataBaseProvider) {
+      Provider<UserInfoDataBase> dataBaseProvider,
+      Provider<RestServiceUserNews> userNewsApiProvider) {
     return new UserRepositoryImp_Factory(
         restServiceRegistrationProvider,
         restServiceUserInfoProvider,
         geolocationProvider,
-        dataBaseProvider);
+        dataBaseProvider,
+        userNewsApiProvider);
   }
 
   public static UserRepositoryImp newUserRepositoryImp(
       RestServiceRegistration restServiceRegistration,
       RestServiceUserInfo restServiceUserInfo,
       RestServiceGeolocation geolocation,
-      UserInfoDataBase dataBase) {
+      UserInfoDataBase dataBase,
+      RestServiceUserNews userNewsApi) {
     return new UserRepositoryImp(
-        restServiceRegistration, restServiceUserInfo, geolocation, dataBase);
+        restServiceRegistration, restServiceUserInfo, geolocation, dataBase, userNewsApi);
   }
 }

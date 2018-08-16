@@ -8,6 +8,7 @@ import android.util.Log;
 
 import alex.mrrok.knowmeapp.R;
 import alex.mrrok.presentation.base.BaseRouter;
+import alex.mrrok.presentation.screens.user.list.addnews.AddNewsActivity;
 import alex.mrrok.presentation.screens.user.list.loginpage.LoginPageActivity;
 import alex.mrrok.presentation.screens.user.list.loginpage.LoginPageViewModel;
 import alex.mrrok.presentation.screens.user.list.settinguserpage.SettingUserActivity;
@@ -37,10 +38,10 @@ public class MainPageRouter extends BaseRouter<MainPageActivity> implements Frag
         getActivity().startActivity(intent);
     }
 
-    public void upadate(){
-        getActivity().recreate();
+    public void startAddNewsActivity() {
+        Intent intent = new Intent(getActivity(), AddNewsActivity.class);
+        getActivity().overridePendingTransition(R.anim.right_in, R.anim.left_out);
+        getActivity().startActivity(intent);
     }
-
-
 
 }

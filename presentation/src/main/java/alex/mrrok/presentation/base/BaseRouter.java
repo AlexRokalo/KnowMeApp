@@ -43,7 +43,7 @@ public class BaseRouter<A extends BaseActivity> {
                 default: {
                     // снова не правильная ошибка
                     Log.e(activity.getClass().getSimpleName(), throwable.toString());
-                    showToastError(R.string.error);
+                    showToastError(R.string.internten_not_avaible);
                     break;
                 }
             }

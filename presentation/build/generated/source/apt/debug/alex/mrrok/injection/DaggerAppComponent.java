@@ -3,6 +3,7 @@ package alex.mrrok.injection;
 
 import alex.mrrok.data.database.UserInfoDataBase;
 import alex.mrrok.data.net.userinfoapi.RestServiceUserInfo;
+import alex.mrrok.data.net.usernewsapi.RestServiceUserNews;
 import alex.mrrok.data.net.userregistrationapi.RestServiceRegistration;
 import alex.mrrok.data.net.usetgeolocationapi.RestServiceGeolocation;
 import alex.mrrok.data.repository.UserRepositoryImp;
@@ -13,6 +14,8 @@ import alex.mrrok.domain.usecases.DataBaseInfoUserCase;
 import alex.mrrok.domain.usecases.GeoAllFiltreUseCase;
 import alex.mrrok.domain.usecases.GeoIdUseCase;
 import alex.mrrok.domain.usecases.GeoSetUserCase;
+import alex.mrrok.domain.usecases.GetUserNewsUseCase;
+import alex.mrrok.domain.usecases.LoadNewsUseCase;
 import alex.mrrok.domain.usecases.LogInUserUseCase;
 import alex.mrrok.domain.usecases.RegistrationUserUseCase;
 import alex.mrrok.domain.usecases.SearchUseCase;
@@ -24,6 +27,8 @@ import alex.mrrok.domain.usecases.UserLocationUseCase;
 import alex.mrrok.domain.usecases.UserPageUseCase;
 import alex.mrrok.executor.UIThread;
 import alex.mrrok.executor.UIThread_Factory;
+import alex.mrrok.presentation.screens.user.list.addnews.AddNewsViewModel;
+import alex.mrrok.presentation.screens.user.list.addnews.AddNewsViewModel_MembersInjector;
 import alex.mrrok.presentation.screens.user.list.createuseraccount.CreateUserViewModel;
 import alex.mrrok.presentation.screens.user.list.createuseraccount.CreateUserViewModel_MembersInjector;
 import alex.mrrok.presentation.screens.user.list.datachangepage.DataChangeViewModel;
@@ -66,7 +71,8 @@ public final class DaggerAppComponent implements AppComponent {
         new RestServiceRegistration(),
         new RestServiceUserInfo(),
         new RestServiceGeolocation(),
-        provideAppDatabaseProvider.get());
+        provideAppDatabaseProvider.get(),
+        new RestServiceUserNews());
   }
 
   private UserRepository getUserRepository() {
@@ -96,6 +102,10 @@ public final class DaggerAppComponent implements AppComponent {
 
   private UserPageUseCase getUserPageUseCase() {
     return new UserPageUseCase(provideUIThreadProvider.get(), getUserRepository());
+  }
+
+  private GetUserNewsUseCase getGetUserNewsUseCase() {
+    return new GetUserNewsUseCase(provideUIThreadProvider.get(), getUserRepository());
   }
 
   private DataBaseInfoUserCase getDataBaseInfoUserCase() {
@@ -128,6 +138,10 @@ public final class DaggerAppComponent implements AppComponent {
 
   private GeoAllFiltreUseCase getGeoAllFiltreUseCase() {
     return new GeoAllFiltreUseCase(provideUIThreadProvider.get(), getUserRepository());
+  }
+
+  private LoadNewsUseCase getLoadNewsUseCase() {
+    return new LoadNewsUseCase(provideUIThreadProvider.get(), getUserRepository());
   }
 
   @SuppressWarnings("unchecked")
@@ -179,6 +193,11 @@ public final class DaggerAppComponent implements AppComponent {
     injectMapsFragmentViewModel(mapsFragmentViewModel);
   }
 
+  @Override
+  public void inject(AddNewsViewModel addNewsViewModel) {
+    injectAddNewsViewModel(addNewsViewModel);
+  }
+
   private LoginPageViewModel injectLoginPageViewModel(LoginPageViewModel instance) {
     LoginPageViewModel_MembersInjector.injectLogInUserUseCase(instance, getLogInUserUseCase());
     return instance;
@@ -196,6 +215,7 @@ public final class DaggerAppComponent implements AppComponent {
 
   private UserPageViewModel injectUserPageViewModel(UserPageViewModel instance) {
     UserPageViewModel_MembersInjector.injectUserPageUseCase(instance, getUserPageUseCase());
+    UserPageViewModel_MembersInjector.injectGetUserNewsUseCase(instance, getGetUserNewsUseCase());
     return instance;
   }
 
@@ -204,6 +224,8 @@ public final class DaggerAppComponent implements AppComponent {
     UserPageFragmentViewModel_MembersInjector.injectUserPageUseCase(instance, getUserPageUseCase());
     UserPageFragmentViewModel_MembersInjector.injectDataBaseInfoUserCase(
         instance, getDataBaseInfoUserCase());
+    UserPageFragmentViewModel_MembersInjector.injectUserNewsUseCase(
+        instance, getGetUserNewsUseCase());
     return instance;
   }
 
@@ -228,6 +250,11 @@ public final class DaggerAppComponent implements AppComponent {
         instance, getGeoAllFiltreUseCase());
     MapsFragmentViewModel_MembersInjector.injectDataBaseInfoUserCase(
         instance, getDataBaseInfoUserCase());
+    return instance;
+  }
+
+  private AddNewsViewModel injectAddNewsViewModel(AddNewsViewModel instance) {
+    AddNewsViewModel_MembersInjector.injectLoadNewsUseCase(instance, getLoadNewsUseCase());
     return instance;
   }
 

@@ -3,6 +3,7 @@ package alex.mrrok.presentation.screens.user.list.userpage;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 
 import alex.mrrok.knowmeapp.R;
@@ -32,6 +33,11 @@ public class UserPageAcitvity extends BaseMvvmActivity<UserPageViewModel,
         super.onCreate(savedInstanceState);
         Log.e("UserPageAcitvity",getIntent().getExtras().getString("userId"));
         viewModel.userId.onNext(getIntent().getExtras().getString("userId"));
+
+        binding.recyclerViewUsersNews.setAdapter(viewModel.adapter);
+        binding.recyclerViewUsersNews.setLayoutManager(new LinearLayoutManager(this));
+        binding.recyclerViewUsersNews.setHasFixedSize(true);
+
 
      }
 }
