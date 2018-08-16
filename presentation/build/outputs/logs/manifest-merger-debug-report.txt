@@ -1,0 +1,303 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:1-53:12
+MERGED from [com.android.databinding:adapters:3.1.3] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\adapters-3.1.3.aar\644a3d35314f9a92b2f4d523aa167ae5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.databinding:library:3.1.3] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\library-3.1.3.aar\3fe45b4dd5f1893f094e9c4a4b83393f\AndroidManifest.xml:17:1-24:12
+MERGED from [devlight.io:navigationtabbar:1.2.5] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\navigationtabbar-1.2.5.aar\667f003948c4e0899a4dac26d6505bef\AndroidManifest.xml:14:1-28:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\7730a61c1131a4fd3b06887e7cbfaf92\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\03ff9cc33c2a374bc894fcffaca9d48d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\ea6249f6688dfdf4ea8732fac2cf9adf\AndroidManifest.xml:2:1-11:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\3e1e44fce813dbd01cf799e648e9bf51\AndroidManifest.xml:15:1-21:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\e82186dede89d306d5fcc1d4e2fa6493\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e2142c07ee52e657b53cf1d047045bf1\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\fc87a364c10ddee49f6e84b05273cbb2\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\382a77c9e5a5bd159d1be6dafa905af4\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\1056c83438f9516e050d1f32efc18354\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\8436ef2c539194eb09628e07ca341529\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\52270d60e9158a50da5b832c983795db\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\abc65394a5d5717464e91a16c1477da1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\a0bd554405cc516c41a33884b1697b6c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\0ff8d982e7352b35c766fdc8c5fb95c5\AndroidManifest.xml:2:1-14:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\f3ff9e24600c6bc326e3b30a447a016c\AndroidManifest.xml:2:1-11:12
+MERGED from [:data] C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\data\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\799bcbf7edbefaba898862f54dc4e378\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\16c5d8d99b995537e2161e5f3a18c8af\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d6da09aaaecf094b27f6f1460fb060cb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:rxjava2:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\rxjava2-1.1.1.aar\c979887cd41ac5ff691aa95a919f9909\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:runtime:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a42f15c67172e32b2de6a14c9ba5aa8d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\a91d610f9a53b37cf3a42e2e7f206193\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0da6da89bb394fc58edace955e99edbe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\f586b04a12324bb05408202f9eecf2a5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\fa36b9a821a2789c392cf1906c2085f4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7139ac4211387864e8773f8c0d2b4940\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\cd6fcc62b4b607ef90e60c24051353db\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\a898aa95433b4966181560b54230a8a7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\cee31dd7229d3a5652c367154c059f03\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\d9551aab09d606384a20db2078432559\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\db-framework-1.1.1.aar\93a3bd5dd926cc0ed28028b5ac6b0377\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\db-1.1.1.aar\299f109e7cccc963bbe43d3a8ce66663\AndroidManifest.xml:17:1-22:12
+MERGED from [:domain] C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\domain\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:1-53:12
+	package
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:1-53:12
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:1-53:12
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:11:22-78
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:12:5-98
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:12:22-95
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:13:22-78
+application
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:15:5-51:19
+MERGED from [devlight.io:navigationtabbar:1.2.5] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\navigationtabbar-1.2.5.aar\667f003948c4e0899a4dac26d6505bef\AndroidManifest.xml:23:5-26:38
+MERGED from [devlight.io:navigationtabbar:1.2.5] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\navigationtabbar-1.2.5.aar\667f003948c4e0899a4dac26d6505bef\AndroidManifest.xml:23:5-26:38
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\ea6249f6688dfdf4ea8732fac2cf9adf\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\ea6249f6688dfdf4ea8732fac2cf9adf\AndroidManifest.xml:9:5-20
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:22:5-28:19
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\e82186dede89d306d5fcc1d4e2fa6493\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\e82186dede89d306d5fcc1d4e2fa6493\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e2142c07ee52e657b53cf1d047045bf1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e2142c07ee52e657b53cf1d047045bf1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\fc87a364c10ddee49f6e84b05273cbb2\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\fc87a364c10ddee49f6e84b05273cbb2\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\382a77c9e5a5bd159d1be6dafa905af4\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\382a77c9e5a5bd159d1be6dafa905af4\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\1056c83438f9516e050d1f32efc18354\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\1056c83438f9516e050d1f32efc18354\AndroidManifest.xml:22:5-26:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\0ff8d982e7352b35c766fdc8c5fb95c5\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\0ff8d982e7352b35c766fdc8c5fb95c5\AndroidManifest.xml:7:5-12:19
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\f3ff9e24600c6bc326e3b30a447a016c\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\f3ff9e24600c6bc326e3b30a447a016c\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:19:9-41
+	android:roundIcon
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:20:9-54
+	android:icon
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:18:9-43
+	android:allowBackup
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:22:9-40
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:16:9-42
+activity#alex.mrrok.presentation.screens.user.list.mainpage.MainPageActivity
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:23:9-31:20
+	android:theme
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:25:13-44
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:24:13-95
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:29:27-74
+activity#alex.mrrok.presentation.screens.user.list.createuseraccount.CreateUserActivity
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:33:9-35:70
+	android:windowSoftInputMode
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:35:13-67
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:34:13-106
+activity#alex.mrrok.presentation.screens.user.list.loginpage.LoginPageActivity
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:37:9-40:70
+	android:windowSoftInputMode
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:40:13-67
+	android:theme
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:39:13-49
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:38:13-97
+activity#alex.mrrok.presentation.screens.user.list.userpage.UserPageAcitvity
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:42:9-104
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:42:19-101
+activity#alex.mrrok.presentation.screens.user.list.settinguserpage.SettingUserActivity
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:43:9-114
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:43:19-111
+activity#alex.mrrok.presentation.screens.user.list.datachangepage.DataChangeActivity
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:44:9-112
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:44:19-109
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:47:9-49:55
+	android:value
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:49:13-52
+	android:name
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml:48:13-58
+uses-sdk
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+MERGED from [com.android.databinding:adapters:3.1.3] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\adapters-3.1.3.aar\644a3d35314f9a92b2f4d523aa167ae5\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:adapters:3.1.3] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\adapters-3.1.3.aar\644a3d35314f9a92b2f4d523aa167ae5\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.1.3] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\library-3.1.3.aar\3fe45b4dd5f1893f094e9c4a4b83393f\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.1.3] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\library-3.1.3.aar\3fe45b4dd5f1893f094e9c4a4b83393f\AndroidManifest.xml:22:5-44
+MERGED from [devlight.io:navigationtabbar:1.2.5] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\navigationtabbar-1.2.5.aar\667f003948c4e0899a4dac26d6505bef\AndroidManifest.xml:19:5-21:41
+MERGED from [devlight.io:navigationtabbar:1.2.5] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\navigationtabbar-1.2.5.aar\667f003948c4e0899a4dac26d6505bef\AndroidManifest.xml:19:5-21:41
+MERGED from [com.android.support:design:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\7730a61c1131a4fd3b06887e7cbfaf92\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\7730a61c1131a4fd3b06887e7cbfaf92\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\03ff9cc33c2a374bc894fcffaca9d48d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\03ff9cc33c2a374bc894fcffaca9d48d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\ea6249f6688dfdf4ea8732fac2cf9adf\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\ea6249f6688dfdf4ea8732fac2cf9adf\AndroidManifest.xml:5:5-7:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\3e1e44fce813dbd01cf799e648e9bf51\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\3e1e44fce813dbd01cf799e648e9bf51\AndroidManifest.xml:19:5-43
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\e82186dede89d306d5fcc1d4e2fa6493\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\e82186dede89d306d5fcc1d4e2fa6493\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e2142c07ee52e657b53cf1d047045bf1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e2142c07ee52e657b53cf1d047045bf1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\fc87a364c10ddee49f6e84b05273cbb2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\fc87a364c10ddee49f6e84b05273cbb2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\382a77c9e5a5bd159d1be6dafa905af4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\382a77c9e5a5bd159d1be6dafa905af4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\1056c83438f9516e050d1f32efc18354\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\1056c83438f9516e050d1f32efc18354\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\8436ef2c539194eb09628e07ca341529\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\8436ef2c539194eb09628e07ca341529\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\52270d60e9158a50da5b832c983795db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\52270d60e9158a50da5b832c983795db\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\abc65394a5d5717464e91a16c1477da1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\abc65394a5d5717464e91a16c1477da1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\a0bd554405cc516c41a33884b1697b6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\a0bd554405cc516c41a33884b1697b6c\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\0ff8d982e7352b35c766fdc8c5fb95c5\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\0ff8d982e7352b35c766fdc8c5fb95c5\AndroidManifest.xml:5:5-44
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\f3ff9e24600c6bc326e3b30a447a016c\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\f3ff9e24600c6bc326e3b30a447a016c\AndroidManifest.xml:5:5-7:41
+MERGED from [:data] C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\data\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:data] C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\data\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\799bcbf7edbefaba898862f54dc4e378\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\799bcbf7edbefaba898862f54dc4e378\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\16c5d8d99b995537e2161e5f3a18c8af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\16c5d8d99b995537e2161e5f3a18c8af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d6da09aaaecf094b27f6f1460fb060cb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d6da09aaaecf094b27f6f1460fb060cb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:rxjava2:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\rxjava2-1.1.1.aar\c979887cd41ac5ff691aa95a919f9909\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:rxjava2:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\rxjava2-1.1.1.aar\c979887cd41ac5ff691aa95a919f9909\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a42f15c67172e32b2de6a14c9ba5aa8d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a42f15c67172e32b2de6a14c9ba5aa8d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\a91d610f9a53b37cf3a42e2e7f206193\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\a91d610f9a53b37cf3a42e2e7f206193\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0da6da89bb394fc58edace955e99edbe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0da6da89bb394fc58edace955e99edbe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\f586b04a12324bb05408202f9eecf2a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\f586b04a12324bb05408202f9eecf2a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\fa36b9a821a2789c392cf1906c2085f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\fa36b9a821a2789c392cf1906c2085f4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7139ac4211387864e8773f8c0d2b4940\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7139ac4211387864e8773f8c0d2b4940\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\cd6fcc62b4b607ef90e60c24051353db\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\cd6fcc62b4b607ef90e60c24051353db\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\a898aa95433b4966181560b54230a8a7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\a898aa95433b4966181560b54230a8a7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\cee31dd7229d3a5652c367154c059f03\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\cee31dd7229d3a5652c367154c059f03\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\d9551aab09d606384a20db2078432559\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\d9551aab09d606384a20db2078432559\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\db-framework-1.1.1.aar\93a3bd5dd926cc0ed28028b5ac6b0377\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\db-framework-1.1.1.aar\93a3bd5dd926cc0ed28028b5ac6b0377\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\db-1.1.1.aar\299f109e7cccc963bbe43d3a8ce66663\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\db-1.1.1.aar\299f109e7cccc963bbe43d3a8ce66663\AndroidManifest.xml:20:5-44
+MERGED from [:domain] C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\domain\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:domain] C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\domain\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+		ADDED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mrrok\AndroidStudioProjects\KnowMeApp\presentation\src\main\AndroidManifest.xml
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\fe55792916b055a47178117a13e9e628\AndroidManifest.xml:24:13-83
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\662f89002b3db64e38308b240039e402\AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e2142c07ee52e657b53cf1d047045bf1\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e2142c07ee52e657b53cf1d047045bf1\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e2142c07ee52e657b53cf1d047045bf1\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e2142c07ee52e657b53cf1d047045bf1\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\1056c83438f9516e050d1f32efc18354\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\1056c83438f9516e050d1f32efc18354\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\1056c83438f9516e050d1f32efc18354\AndroidManifest.xml:24:13-58
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\0ff8d982e7352b35c766fdc8c5fb95c5\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\0ff8d982e7352b35c766fdc8c5fb95c5\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\0ff8d982e7352b35c766fdc8c5fb95c5\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\mrrok\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\0ff8d982e7352b35c766fdc8c5fb95c5\AndroidManifest.xml:9:13-64

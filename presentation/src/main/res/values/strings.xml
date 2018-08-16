@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">KnowMeApp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signUp">No account yet? Create one</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="APP_STORAGE_NAME">APP_STORAGE_NAME</string>
+    <string name="ok">OK</string>
+    <string name="cancle">CANCNLE</string>
+    <string name="geiolacationDialog">Turn on yout gps</string>
+
+    <string name="error">Sorry, indefinid error</string>
+    <string name="internten_not_avaible">Not internet connection</string>
+    <string name="server_error">Sorry, server error</string>
+
+</resources>

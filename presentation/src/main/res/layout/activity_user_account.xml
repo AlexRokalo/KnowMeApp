@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="alex.mrrok.presentation.screens.user.list.mainpage.MainPageViewModel">
+
+        </variable>
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+<!--
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fillViewport="true">
+-->
+
+            <!-- <fragment
+                 android:name="alex.mrrok.presentation.screens.user.list.userpage.fragment.UserPageFragment"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"/>-->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+              <!--  <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+-->
+                <!-- <android.support.constraint.ConstraintLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintStart_toStartOf="parent"
+                     tools:layout_editor_absoluteY="0dp">
+
+                     <ImageView
+                         android:id="@+id/imageView2"
+                         android:layout_width="100dp"
+                         android:layout_height="100dp"
+                         android:layout_marginStart="24dp"
+                         android:layout_marginTop="32dp"
+                         android:foregroundGravity="center"
+                         android:src="@drawable/ic_person_black_24dp"
+                         android:visibility="visible"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toTopOf="parent" />
+
+
+                     <TextView
+                         android:id="@+id/textView3"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginEnd="48dp"
+                         android:layout_marginStart="8dp"
+                         android:layout_marginTop="32dp"
+                         android:gravity="center"
+                         android:hint="#Name"
+                         android:text="@{viewModel.name}"
+                         android:textColor="#000000"
+                         android:textSize="22sp"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintHorizontal_bias="0.0"
+                         app:layout_constraintStart_toStartOf="@+id/button3"
+                         app:layout_constraintTop_toTopOf="parent" />
+
+                     <TextView
+                         android:id="@+id/textView4"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:hint="#nickname"
+                         android:text="@{viewModel.nickName}"
+                         android:textColor="#000000"
+                         android:textSize="12sp"
+                         app:layout_constraintStart_toStartOf="@+id/textView3"
+                         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+                     <TextView
+                         android:id="@+id/textView9"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="5" />
+
+                     <Button
+                         android:id="@+id/button3"
+                         android:layout_width="113dp"
+                         android:layout_height="29dp"
+                         android:layout_gravity="center"
+                         android:layout_marginEnd="60dp"
+                         android:layout_marginTop="24dp"
+                         android:layout_weight="40"
+                         android:background="@drawable/btn_setting_black"
+                         android:gravity="center"
+                         android:onClick="@{viewModel.setting}"
+                         android:text="Setting"
+                         android:textColor="#ffffff"
+                         android:textSize="15sp"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                     <TextView
+                         android:id="@+id/textView5"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="24dp"
+                         android:layout_marginTop="152dp"
+                         android:text="Age : 19"
+                         android:textColor="#000000"
+                         android:textStyle="bold"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toTopOf="parent" />
+
+                     <TextView
+                         android:id="@+id/textView8"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="12dp"
+                         android:text="Email : mr.rokalo@mail.ru"
+                         android:textColor="#000000"
+                         android:textStyle="bold"
+                         app:layout_constraintStart_toStartOf="@+id/textView5"
+                         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                     <FrameLayout
+                         android:id="@+id/frameLayout2"
+                         android:layout_width="match_parent"
+                         android:layout_height="2dp"
+                         android:layout_marginEnd="8dp"
+                         android:layout_marginStart="8dp"
+                         android:layout_marginTop="8dp"
+                         android:background="#000000"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                     </FrameLayout>
+
+                     <FrameLayout
+                         android:id="@+id/frameLayout"
+                         android:layout_width="match_parent"
+                         android:layout_height="2dp"
+                         android:layout_marginBottom="8dp"
+                         android:layout_marginEnd="8dp"
+                         android:layout_marginStart="8dp"
+                         android:background="#000000"
+                         app:layout_constraintBottom_toTopOf="@+id/textView5"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintHorizontal_bias="0.0"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                     </FrameLayout>
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="8dp"
+                         android:orientation="vertical"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="16dp"
+                             android:src="@drawable/ic_sixth"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent" />
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="16dp"
+                             android:src="@drawable/ic_sixth"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent" />
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="16dp"
+                             android:src="@drawable/ic_sixth"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent" />
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="16dp"
+                             android:src="@drawable/ic_sixth"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent" />
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="16dp"
+                             android:src="@drawable/ic_sixth"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent" />
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="16dp"
+                             android:src="@drawable/ic_sixth"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent" />
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="16dp"
+                             android:src="@drawable/ic_sixth"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent" />
+
+
+                     </LinearLayout>
+
+                 </android.support.constraint.ConstraintLayout>-->
+            </android.support.v4.view.ViewPager>
+        <!--</android.support.v4.widget.NestedScrollView>-->
+
+        <devlight.io.library.ntb.NavigationTabBar
+            android:id="@+id/ntb_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:ntb_badge_gravity="top"
+            app:ntb_badge_position="right"
+            app:ntb_badged="true"
+            app:ntb_bg_color="@color/white"
+            app:ntb_scaled="true"
+            app:ntb_swiped="true"
+            app:ntb_tinted="true"
+            app:ntb_title_mode="all"
+            app:ntb_titled="true" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="344dp"
+                    android:layout_height="298dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+
+                    android:layout_marginTop="4dp"
+                    android:background="@color/primary"
+                    app:layout_constraintBottom_toTopOf="@+id/ntb_horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    app:layout_constraintVertical_bias="1.0" />-->
+
+
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:weightSum="100">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="35">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/ic_launcher_background" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="65"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Jack Martin"
+                            android:textColor="#ffffff"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="#califMusic"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
+                        android:weightSum="100">
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="40"
+                            android:background="#ffa200"
+                            android:gravity="center"
+                            android:onClick="@{viewModel.setting}"
+                            android:text="setting"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5" />
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="40"
+                            android:background="#016dff"
+                            android:gravity="center"
+                            android:text="write"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="15" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/account_viewPage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </android.support.v4.view.ViewPager>
+
+            <devlight.io.library.ntb.NavigationTabBar
+                android:id="@+id/ntb_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:ntb_badge_gravity="top"
+                app:ntb_badge_position="right"
+                app:ntb_badged="true"
+                app:ntb_bg_color="@color/white"
+                app:ntb_scaled="true"
+                app:ntb_swiped="true"
+                app:ntb_tinted="true"
+                app:ntb_title_mode="all"
+                app:ntb_titled="true" />
+
+
+        </LinearLayout>-->
+</layout>

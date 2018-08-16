@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_user.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\item_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user_account_with_view.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_user_account_with_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_vpuser.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_vpuser.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_listuserfragment.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_listuserfragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_account_settings.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_account_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_map.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_anothe_user.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_anothe_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user_account.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_user_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fragmentmap.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\activity_fragmentmap.xml"
+    },
+    {
+        "merged": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_marker_layout.xml",
+        "source": "C:\\Users\\mrrok\\AndroidStudioProjects\\KnowMeApp\\presentation\\src\\main\\res\\layout\\custom_marker_layout.xml"
+    }
+]

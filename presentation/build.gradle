@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    defaultConfig {
+        applicationId "alex.mrrok.knowmeapp"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 28
+}
+
+dependencies {
+
+    //View
+    implementation "com.android.support:appcompat-v7:$supportVersion"
+    implementation "com.android.support.constraint:constraint-layout:$constraintVersion"
+    implementation "com.android.support:design:$supportVersion"
+
+    //Rx
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+
+    // Arch
+    implementation "android.arch.lifecycle:extensions:$archVersion"
+    implementation "android.arch.lifecycle:viewmodel:$archVersion"
+
+    //    implementation "android.arch.lifecycle:common-java8:$archVersion"
+
+    //Binding
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+//    implementation "com.android.support:appcompat-v7:$supportVersion"
+    annotationProcessor "com.android.databinding:compiler:$bindingVersion"
+
+    //Dagger
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    //RecyclerView
+    implementation "com.android.support:recyclerview-v7:$supportVersion"
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //NavigationTabBar
+    implementation "devlight.io:navigationtabbar:$tabBarVersion"
+
+    //Google maps
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+
+    //CicrleImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+
+    implementation project(path: ':data')
+}
