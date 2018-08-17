@@ -1,5 +1,6 @@
 package alex.mrrok.presentation.screens.user.list.addnews;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.databinding.ObservableField;
 import android.util.Log;
@@ -10,13 +11,16 @@ import javax.inject.Inject;
 import alex.mrrok.app.App;
 import alex.mrrok.domain.entity.UserNews;
 import alex.mrrok.domain.usecases.LoadNewsUseCase;
+import alex.mrrok.knowmeapp.R;
 import alex.mrrok.presentation.base.BaseViewModel;
 import io.reactivex.CompletableObserver;
 import io.reactivex.disposables.Disposable;
 
+import static alex.mrrok.presentation.screens.user.list.mainpage.MainPageActivity.DELAY_MILLIS;
+
 public class AddNewsViewModel extends BaseViewModel<AddNewsRouter> {
 
-    protected final static int REQUEST_FOTO = 10;
+    protected final static int REQUEST_PHOTO = 10;
 
     @Inject
     public LoadNewsUseCase loadNewsUseCase;
@@ -34,7 +38,7 @@ public class AddNewsViewModel extends BaseViewModel<AddNewsRouter> {
         public void onClick(View view) {
             Intent intent = new Intent(Intent.ACTION_PICK);
             intent.setType("image/*");
-            router.getActivity().startActivityForResult(intent, REQUEST_FOTO);
+            router.getActivity().startActivityForResult(intent, REQUEST_PHOTO);
         }
     };
 
@@ -55,8 +59,7 @@ public class AddNewsViewModel extends BaseViewModel<AddNewsRouter> {
 
                         @Override
                         public void onComplete() {
-                            router.startMainPageActivity();
-                            router.finish();
+                            startMainPageActivity();
                             Log.e("onComplete", "work");
                         }
 
@@ -68,6 +71,24 @@ public class AddNewsViewModel extends BaseViewModel<AddNewsRouter> {
                     });
         }
     };
+
+
+    public void startMainPageActivity() {
+        final ProgressDialog progressDialog = new ProgressDialog(router.getActivity(),
+                R.style.AppTheme_Dark_Dialog);
+        progressDialog.setIndeterminate(true);
+        progressDialog.setMessage("Adding...");
+        progressDialog.show();
+
+        new android.os.Handler().postDelayed(
+                new Runnable() {
+                    public void run() {
+                        router.startMainPageActivity();
+                        router.finish();
+                        progressDialog.dismiss();
+                    }
+                }, DELAY_MILLIS);
+    }
 
     private UserNews createUserNews() {
         UserNews userNews = new UserNews();

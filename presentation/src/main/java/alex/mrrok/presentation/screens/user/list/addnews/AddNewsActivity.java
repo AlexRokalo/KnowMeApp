@@ -11,7 +11,7 @@ import alex.mrrok.knowmeapp.R;
 import alex.mrrok.knowmeapp.databinding.ActivityAddNewsBinding;
 import alex.mrrok.presentation.base.BaseMvvmActivity;
 
-import static alex.mrrok.presentation.screens.user.list.addnews.AddNewsViewModel.REQUEST_FOTO;
+import static alex.mrrok.presentation.screens.user.list.addnews.AddNewsViewModel.REQUEST_PHOTO;
 
 public class AddNewsActivity extends BaseMvvmActivity<AddNewsViewModel, ActivityAddNewsBinding,
         AddNewsRouter> {
@@ -40,7 +40,7 @@ public class AddNewsActivity extends BaseMvvmActivity<AddNewsViewModel, Activity
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (data != null) {
-            if (requestCode == REQUEST_FOTO) {
+            if (requestCode == REQUEST_PHOTO) {
                 viewModel.photo.set(data.getDataString());
                 Picasso.get().load(data.getData()).into(binding.userNewsPhoto);
             }

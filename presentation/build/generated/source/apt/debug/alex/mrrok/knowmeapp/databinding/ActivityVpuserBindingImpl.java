@@ -23,7 +23,7 @@ public class ActivityVpuserBindingImpl extends ActivityVpuserBinding  {
     }
     // views
     @NonNull
-    private final android.support.v4.widget.NestedScrollView mboundView0;
+    private final android.support.constraint.ConstraintLayout mboundView0;
     @NonNull
     private final android.widget.Button mboundView5;
     // variables
@@ -49,7 +49,7 @@ public class ActivityVpuserBindingImpl extends ActivityVpuserBinding  {
             );
         this.activityVpCircleImage.setTag(null);
         this.button3.setTag(null);
-        this.mboundView0 = (android.support.v4.widget.NestedScrollView) bindings[0];
+        this.mboundView0 = (android.support.constraint.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
         this.mboundView5 = (android.widget.Button) bindings[5];
         this.mboundView5.setTag(null);

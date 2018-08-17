@@ -59,6 +59,7 @@ public class UserListFragment extends BaseMvvmFragment<UserListFragmentViewModel
         binding.recyclerView.setAdapter(viewModel.adapter);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         binding.recyclerView.setHasFixedSize(true);
+//        binding.recyclerView.setNestedScrollingEnabled(false);
 
         Toolbar toolbar = binding.fragmentToolbar;
         toolbar.setTitle("Find");

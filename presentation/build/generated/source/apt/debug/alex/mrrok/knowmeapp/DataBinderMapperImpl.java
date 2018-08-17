@@ -52,11 +52,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYANOTHEUSER = 12;
 
-  private static final int LAYOUT_ACTIVITYVPUSER = 13;
+  private static final int LAYOUT_ITEMNEWS = 13;
 
   private static final int LAYOUT_ACTIVITYUSERACCOUNT = 14;
 
-  private static final int LAYOUT_ITEMNEWS = 15;
+  private static final int LAYOUT_ACTIVITYVPUSER = 15;
 
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(15);
 
@@ -73,9 +73,9 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.custom_marker_layout, LAYOUT_CUSTOMMARKERLAYOUT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_add_news, LAYOUT_ACTIVITYADDNEWS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_anothe_user, LAYOUT_ACTIVITYANOTHEUSER);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_vpuser, LAYOUT_ACTIVITYVPUSER);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_user_account, LAYOUT_ACTIVITYUSERACCOUNT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.item_news, LAYOUT_ITEMNEWS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_user_account, LAYOUT_ACTIVITYUSERACCOUNT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(alex.mrrok.knowmeapp.R.layout.activity_vpuser, LAYOUT_ACTIVITYVPUSER);
   }
 
   @Override
@@ -159,11 +159,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_anothe_user is invalid. Received: " + tag);
         }
-        case  LAYOUT_ACTIVITYVPUSER: {
-          if ("layout/activity_vpuser_0".equals(tag)) {
-            return new ActivityVpuserBindingImpl(component, view);
+        case  LAYOUT_ITEMNEWS: {
+          if ("layout/item_news_0".equals(tag)) {
+            return new ItemNewsBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for activity_vpuser is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for item_news is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYUSERACCOUNT: {
           if ("layout/activity_user_account_0".equals(tag)) {
@@ -171,11 +171,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_user_account is invalid. Received: " + tag);
         }
-        case  LAYOUT_ITEMNEWS: {
-          if ("layout/item_news_0".equals(tag)) {
-            return new ItemNewsBindingImpl(component, view);
+        case  LAYOUT_ACTIVITYVPUSER: {
+          if ("layout/activity_vpuser_0".equals(tag)) {
+            return new ActivityVpuserBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for item_news is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for activity_vpuser is invalid. Received: " + tag);
         }
       }
     }
@@ -278,9 +278,9 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         break;
       }
-      case -1513696383: {
-        if(tag.equals("layout/activity_vpuser_0")) {
-          return R.layout.activity_vpuser;
+      case -1455977205: {
+        if(tag.equals("layout/item_news_0")) {
+          return R.layout.item_news;
         }
         break;
       }
@@ -290,9 +290,9 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         break;
       }
-      case -1455977205: {
-        if(tag.equals("layout/item_news_0")) {
-          return R.layout.item_news;
+      case -1513696383: {
+        if(tag.equals("layout/activity_vpuser_0")) {
+          return R.layout.activity_vpuser;
         }
         break;
       }
